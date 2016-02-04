@@ -12,3 +12,4 @@ deploy:
 	find . -name '.DS_Store' -print0 | xargs -0 rm
 	ssh endeavorops@broadside.dreamhost.com "rm -rf ~/endeavorops.com/*"
 	scp -r public/* endeavorops@broadside.dreamhost.com:~/endeavorops.com
+	scp -r public/.htaccess endeavorops@broadside.dreamhost.com:~/endeavorops.com/.htaccess
