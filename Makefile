@@ -9,7 +9,8 @@ run:
 	docker run -it --rm -v $(PWD)/public:/usr/local/apache2/htdocs/ -p "80:80" $(NAME)
 
 deploy:
-	find . -name '.DS_Store' -print0 | xargs -0 rm
+	rm -rf website/_site
+	cd website; jekyll build
 	ssh endeavorops@broadside.dreamhost.com "rm -rf ~/endeavorops.com/*"
-	scp -r public/* endeavorops@broadside.dreamhost.com:~/endeavorops.com
-	scp -r public/.htaccess endeavorops@broadside.dreamhost.com:~/endeavorops.com/.htaccess
+	scp -r website/_site/* endeavorops@broadside.dreamhost.com:~/endeavorops.com
+	scp website/_site/.htaccess endeavorops@broadside.dreamhost.com:~/endeavorops.com/.htaccess
