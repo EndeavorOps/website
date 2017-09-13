@@ -1,5 +1,6 @@
 ---
 layout: default
+id: index
 ---
 
 <!-- Header -->
@@ -64,6 +65,42 @@ layout: default
                 </span>
                 <h4 class="service-heading">Hosting</h4>
                 <p class="text-muted">We take ownership of the deployment and operations of your website or app with 24/7/365 monitoring. We are experts in designing and building high availability websites and systems.</p>
+                <div class="col-md-6">
+                    <form action="https://wt-5b3ce042e3e82334c7576fcb004c8745-0.run.webtask.io/stripe-payment/subscribe?plan=01" method="POST">
+                       <script
+                          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                          data-key="pk_live_1GqJnq4cLetQIZ0U52MTFNi5"
+                          data-amount="500"
+                          data-name="EndeavorOps, LLC"
+                          data-description="Basic Hosting Subscription"
+                          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                          data-locale="auto"
+                          data-zip-code="true"
+                          data-panel-label="Subscribe"
+                          data-label="Subscribe"
+                          data-allow-remember-me="false">
+                        </script>
+                    </form>
+                    <p>Basic Hosting<br>$15 every 3 months</p>
+                </div>
+                <div class="col-md-6">
+                    <form action="https://wt-5b3ce042e3e82334c7576fcb004c8745-0.run.webtask.io/stripe-payment/subscribe?plan=02" method="POST">
+                       <script
+                          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                          data-key="pk_live_1GqJnq4cLetQIZ0U52MTFNi5"
+                          data-amount="1500"
+                          data-name="EndeavorOps, LLC"
+                          data-description="Premium Hosting Subscription"
+                          data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                          data-locale="auto"
+                          data-zip-code="true"
+                          data-panel-label="Subscribe"
+                          data-label="Subscribe"
+                          data-allow-remember-me="false">
+                        </script>
+                    </form>
+                    <p>Premium Hosting<br>$15/mo</p>
+                </div>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x">
@@ -72,10 +109,10 @@ layout: default
                 </span>
                 <h4 class="service-heading">Management</h4>
                 <p class="text-muted">We've been managing mission critical, 24/7/365 opperations for decades. Let us manage your complex environment so you can focus on your customers.</p>
-                <!-- <form action="https://wt-5b3ce042e3e82334c7576fcb004c8745-0.run.webtask.io/stripe_order" method="POST">
+                <form action="https://wt-5b3ce042e3e82334c7576fcb004c8745-0.run.webtask.io/stripe-payment/subscribe?plan=mgmt" method="POST">
                    <script
                       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                      data-key="pk_test_sMSzaTZ4bMlab5yQsjSKl9J8"
+                      data-key="pk_live_1GqJnq4cLetQIZ0U52MTFNi5"
                       data-amount="2500"
                       data-name="EndeavorOps, LLC"
                       data-description="Management Subscription"
@@ -83,11 +120,11 @@ layout: default
                       data-locale="auto"
                       data-zip-code="true"
                       data-panel-label="Subscribe"
-                      data-label="Subscribe with Card"
+                      data-label="Subscribe"
                       data-allow-remember-me="false">
                     </script>
                 </form>
-                <p>$25/mo</p> -->
+                <p>$25/mo</p>
             </div>
         </div>
     </div>

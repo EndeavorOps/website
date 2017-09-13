@@ -9,7 +9,9 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">EndeavorOps</a>
+            
+            <a class="navbar-brand page-scroll" href="{% if page.id != 'index' %}/{% endif %}#page-top">EndeavorOps</a>
+            
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -19,16 +21,16 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="{% if page.id != 'index' %}/{% endif %}#services">Services</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="{% if page.id != 'index' %}/{% endif %}#about">About</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#team">Team</a>
+                    <a class="page-scroll" href="{% if page.id != 'index' %}/{% endif %}#team">Team</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="{% if page.id != 'index' %}/{% endif %}#contact">Contact</a>
                 </li>
             </ul>
         </div>
